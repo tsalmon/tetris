@@ -1,0 +1,45 @@
+class piece():
+    def __str__(self):
+        return (self.__doc__)
+    def rotation(self):
+        pass
+class I(piece):
+    "cyan"
+    point=[0,5]
+    liste=[[-1,5],[0,5],[1,5],[2,5]]
+    couleur=(102,255,255)
+
+class O(piece):
+    "brun"
+    point=None
+    couleur=(0,0,153)
+    liste=[[-1,5],[-1,6],[0,5],[0,6]]
+
+class T(piece):
+    "jaune"
+    point=[0,5]
+    couleur=(255,255,0)
+    liste=[[-1,5],[0,5],[1,5],[0,6]]
+
+class L(piece):
+    "bleu"
+    point=[1,5]
+    couleur=(0,0,255)
+    liste=[[-1,5],[0,5],[1,5],[1,6]]
+        
+class J(piece):
+    "orange"
+    point=[2,5]
+    couleur=(255,165,0)
+    liste=[[0,5],[1,5],[2,5],[2,4]]
+
+class S(piece):
+    "rouge"
+    couleur=(255,0,0)
+    liste=[[-1,6],[-1,7],[0,5],[0,6]]
+    point=[-1,7]
+class Z(piece):
+    "vert"
+    point=[-1,6]
+    couleur=(0,255,0)
+    liste=[[-1,5],[-1,6],[0,6],[0,7]]
